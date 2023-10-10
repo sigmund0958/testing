@@ -33,7 +33,8 @@ public class UtentiController {
 	@GET
 	@Path("/ping")
 	public Response ping(){
-		return Response.status(Status.OK).entity("pong").build();
+		String risposta = "pong";
+		return Response.status(Status.OK).entity(risposta).build();
 	}
 	
 	@POST
@@ -68,5 +69,12 @@ public class UtentiController {
 		}else {
 			return Response.status(Status.OK).entity("L'utente non esiste").build();
 		}
+	}
+	
+	@GET
+	@Path("/bang")
+	public Response bang(){
+		String risposta = "baaaaang";
+		return Response.status(Status.OK).entity(risposta).build();
 	}
 }
