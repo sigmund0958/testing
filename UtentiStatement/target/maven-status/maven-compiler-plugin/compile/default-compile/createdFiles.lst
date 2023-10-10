@@ -1,8 +1,0 @@
-com\majorbit\model\Utenti.class
-com\majorbit\repository\UtentiDAOImpl.class
-com\majorbit\controller\UtentiController.class
-com\majorbit\repository\DBConnection.class
-com\majorbit\controller\UtentiPreparedController.class
-com\majorbit\repository\UtentiDAO.class
-com\majorbit\repository\UtentiPreparedDAOImpl.class
-com\majorbit\run\Avvio.class
