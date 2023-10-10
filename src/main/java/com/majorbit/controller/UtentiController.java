@@ -29,6 +29,12 @@ public class UtentiController {
 			return Response.status(Status.OK).entity("L'utente esiste gia'").build();
 		}
 	}
+
+	@GET
+	@Path("/ping")
+	public Response ping(){
+		return Response.status(Status.OK).entity("pong").build();
+	}
 	
 	@POST
 	@Path("/prepared")
