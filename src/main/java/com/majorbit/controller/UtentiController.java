@@ -36,6 +36,12 @@ public class UtentiController {
 		return Response.status(Status.OK).entity("pong").build();
 	}
 	
+	@GET
+	@Path("/test")
+	public Response test() {
+		return Response.status(Status.OK).entity("OK").build();
+	}
+	
 	@POST
 	@Path("/prepared")
 	public Response createPrep(Utenti u) {
